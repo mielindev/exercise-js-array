@@ -25,7 +25,6 @@
         class="form-controlled my-3 rounded"
         id="number"
         placeholder="Nhập số N"
-        autofocus
       />
       <br />
       <button
@@ -100,6 +99,53 @@
         Đổi chỗ
       </button>
       <p id="swapLocation"></p>
+    </div>
+    <!-- Sắp xếp mảng theo thứ tự tăng dần -->
+    <div class="container">
+      <h3>7. Sắp xếp mảng theo thứ tự tăng dần.</h3>
+      <button onclick="sortUp()">Sắp xếp</button>
+      <p id="sortUp"></p>
+    </div>
+    <!-- Tìm số nguyên tố đầu tiên -->
+    <div class="container">
+      <h3>8. Tìm số nguyên tố đầu tiên</h3>
+      <button class="btn btn-outline-success rounded" onclick="findPrime()">
+        Tìm
+      </button>
+      <p id="findPrime"></p>
+    </div>
+    <!-- Tìm số nguyên trong mảng -->
+    <div class="container">
+      <h3>Tìm số nguyên trong mảng</h3>
+      <input
+        type="number"
+        class="form-controlled my-3 p-1 rounded"
+        id="realNumber"
+        placeholder="Nhập số"
+      />
+      <button
+        id="addValueArr"
+        class="btn btn-outline-success rounded"
+        onclick="addRealNum()"
+      >
+        Thêm số
+      </button>
+      <p id="realNum"></p>
+      <button class="btn btn-outline-success rounded" onclick="countRealNum()">
+        Đếm
+      </button>
+      <p id="countRealNum"></p>
+    </div>
+    <!-- So sánh số lượng số dương và số lượng số âm -->
+    <div class="container">
+      <h3>So sánh số lượng số dương và số lượng số âm</h3>
+      <button
+        class="btn btn-outline-success rounded"
+        onclick="comparePosNega()"
+      >
+        So sánh
+      </button>
+      <p id="comparePosNega"></p>
     </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script
