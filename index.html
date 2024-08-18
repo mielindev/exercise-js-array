@@ -19,13 +19,77 @@
   </head>
 
   <body>
-    <header>
-      <!-- place navbar here -->
-    </header>
-    <main></main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
+    <div class="container">
+      <input
+        type="text"
+        class="form-controlled my-3 rounded"
+        id="number"
+        placeholder="Nhập số N"
+        autofocus
+      />
+      <br />
+      <button
+        id="addValueArr"
+        class="btn btn-primary rounded"
+        onclick="submit()"
+      >
+        Thêm
+      </button>
+      <p class="result"></p>
+    </div>
+    <div class="container">
+      <h3>1. Tổng các số dương trong mảng.</h3>
+      <button class="btn btn-outline-success" onclick="sumYangNum()">
+        Tính tổng
+      </button>
+      <p id="sumYangNum"></p>
+    </div>
+    <div class="container">
+      <h3>2. Đếm các số dương trong mảng.</h3>
+      <button class="btn btn-outline-success" onclick="countYangNum()">
+        Đếm
+      </button>
+      <p id="countYangNum"></p>
+    </div>
+    <div class="container">
+      <h3>3. Tìm số nhỏ nhất trong mảng.</h3>
+      <button class="btn btn-outline-success" onclick="minArr()">
+        Tìm số nhỏ nhất
+      </button>
+      <p id="minArr"></p>
+    </div>
+    <div class="container">
+      <h3>4. Tìm số dương nhỏ nhất trong mảng.</h3>
+      <button class="btn btn-outline-success" onclick="minYangArr()">
+        Tìm số nhỏ nhất
+      </button>
+      <p id="minYangArr"></p>
+    </div>
+    <div class="container">
+      <h3>5. Tìm số chẵn cuối cùng trong mảng.</h3>
+      <button class="btn btn-outline-success" onclick="lastEvenNum()">
+        Tìm số chẵn cuối cùng
+      </button>
+      <p id="lastEvenNum"></p>
+    </div>
+    <div class="container">
+      <h3>6. Đổi chỗ 2 giá trị trong mảng</h3>
+      <input
+        class="rounded p-1"
+        type="number"
+        id="firstLocation"
+        placeholder="Nhập vị trí thứ nhất"
+      />
+      <input
+        class="rounded p-1"
+        type="number"
+        id="SecondLocation"
+        placeholder="Nhập vị trí thứ hai"
+      />
+      <button type="button" class="btn btn-outline-success rounded">
+        Đổi chỗ
+      </button>
+    </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -38,5 +102,6 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
