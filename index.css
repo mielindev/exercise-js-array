@@ -1,5 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+.container {
+  background-color: lightskyblue;
+}
+p {
+  font-size: larger;
+  font-weight: 400;
+  padding: 10px;
+  margin: 0;
+  background-color: lightskyblue !important;
+}
+
+.container button {
+  background-color: #1e201e;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  margin: 10px 0;
 }

@@ -16,64 +16,50 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
     <div class="container">
+      <h3 class="pt-4">Nhập số N</h3>
       <input
         type="text"
-        class="form-controlled my-3 rounded"
+        class="form-controlled my-3 rounded w-25"
         id="number"
         placeholder="Nhập số N"
       />
       <br />
-      <button
-        id="addValueArr"
-        class="btn btn-primary rounded"
-        onclick="submit()"
-      >
-        Thêm
-      </button>
+      <button id="addValueArr" onclick="submit()">Thêm</button>
       <p class="result"></p>
     </div>
     <!-- Tổng các số dương -->
     <div class="container">
       <h3>1. Tổng các số dương trong mảng.</h3>
-      <button class="btn btn-outline-success" onclick="sumYangNum()">
-        Tính tổng
-      </button>
+      <button onclick="sumYangNum()">Tính tổng</button>
       <p id="sumYangNum"></p>
     </div>
     <!-- Đếm số dương -->
     <div class="container">
       <h3>2. Đếm các số dương trong mảng.</h3>
-      <button class="btn btn-outline-success" onclick="countYangNum()">
-        Đếm
-      </button>
+      <button onclick="countYangNum()">Đếm</button>
       <p id="countYangNum"></p>
     </div>
     <!-- Tìm số nhỏ nhất -->
     <div class="container">
       <h3>3. Tìm số nhỏ nhất trong mảng.</h3>
-      <button class="btn btn-outline-success" onclick="minArr()">
-        Tìm số nhỏ nhất
-      </button>
+      <button onclick="minArr()">Tìm số nhỏ nhất</button>
       <p id="minArr"></p>
     </div>
     <!-- Tìm số dương nhỏ nhất -->
     <div class="container">
       <h3>4. Tìm số dương nhỏ nhất trong mảng.</h3>
-      <button class="btn btn-outline-success" onclick="minYangArr()">
-        Tìm số nhỏ nhất
-      </button>
+      <button onclick="minYangArr()">Tìm số nhỏ nhất</button>
       <p id="minYangArr"></p>
     </div>
     <!-- Tìm số chẵn cuối cùng -->
     <div class="container">
       <h3>5. Tìm số chẵn cuối cùng trong mảng.</h3>
-      <button class="btn btn-outline-success" onclick="lastEvenNum()">
-        Tìm số chẵn cuối cùng
-      </button>
+      <button onclick="lastEvenNum()">Tìm số chẵn cuối cùng</button>
       <p id="lastEvenNum"></p>
     </div>
     <!-- Đổi chỗ 2 giá trị trong mảng -->
@@ -91,13 +77,7 @@
         id="secondLocation"
         placeholder="Nhập vị trí thứ hai"
       />
-      <button
-        type="button"
-        onclick="swapLocation()"
-        class="btn btn-outline-success rounded"
-      >
-        Đổi chỗ
-      </button>
+      <button type="button" onclick="swapLocation()">Đổi chỗ</button>
       <p id="swapLocation"></p>
     </div>
     <!-- Sắp xếp mảng theo thứ tự tăng dần -->
@@ -109,42 +89,27 @@
     <!-- Tìm số nguyên tố đầu tiên -->
     <div class="container">
       <h3>8. Tìm số nguyên tố đầu tiên</h3>
-      <button class="btn btn-outline-success rounded" onclick="findPrime()">
-        Tìm
-      </button>
+      <button onclick="findPrime()">Tìm</button>
       <p id="findPrime"></p>
     </div>
     <!-- Tìm số nguyên trong mảng -->
     <div class="container">
-      <h3>Tìm số nguyên trong mảng</h3>
+      <h3>9. Tìm số nguyên trong mảng</h3>
       <input
         type="number"
         class="form-controlled my-3 p-1 rounded"
         id="realNumber"
         placeholder="Nhập số"
       />
-      <button
-        id="addValueArr"
-        class="btn btn-outline-success rounded"
-        onclick="addRealNum()"
-      >
-        Thêm số
-      </button>
+      <button id="addValueArr" onclick="addRealNum()">Thêm số</button>
       <p id="realNum"></p>
-      <button class="btn btn-outline-success rounded" onclick="countRealNum()">
-        Đếm
-      </button>
+      <button onclick="countRealNum()">Đếm</button>
       <p id="countRealNum"></p>
     </div>
     <!-- So sánh số lượng số dương và số lượng số âm -->
     <div class="container">
-      <h3>So sánh số lượng số dương và số lượng số âm</h3>
-      <button
-        class="btn btn-outline-success rounded"
-        onclick="comparePosNega()"
-      >
-        So sánh
-      </button>
+      <h3>10. So sánh số lượng số dương và số lượng số âm</h3>
+      <button onclick="comparePosNega()">So sánh</button>
       <p id="comparePosNega"></p>
     </div>
     <!-- Bootstrap JavaScript Libraries -->
