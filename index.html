@@ -37,6 +37,7 @@
       </button>
       <p class="result"></p>
     </div>
+    <!-- Tổng các số dương -->
     <div class="container">
       <h3>1. Tổng các số dương trong mảng.</h3>
       <button class="btn btn-outline-success" onclick="sumYangNum()">
@@ -44,6 +45,7 @@
       </button>
       <p id="sumYangNum"></p>
     </div>
+    <!-- Đếm số dương -->
     <div class="container">
       <h3>2. Đếm các số dương trong mảng.</h3>
       <button class="btn btn-outline-success" onclick="countYangNum()">
@@ -51,6 +53,7 @@
       </button>
       <p id="countYangNum"></p>
     </div>
+    <!-- Tìm số nhỏ nhất -->
     <div class="container">
       <h3>3. Tìm số nhỏ nhất trong mảng.</h3>
       <button class="btn btn-outline-success" onclick="minArr()">
@@ -58,6 +61,7 @@
       </button>
       <p id="minArr"></p>
     </div>
+    <!-- Tìm số dương nhỏ nhất -->
     <div class="container">
       <h3>4. Tìm số dương nhỏ nhất trong mảng.</h3>
       <button class="btn btn-outline-success" onclick="minYangArr()">
@@ -65,6 +69,7 @@
       </button>
       <p id="minYangArr"></p>
     </div>
+    <!-- Tìm số chẵn cuối cùng -->
     <div class="container">
       <h3>5. Tìm số chẵn cuối cùng trong mảng.</h3>
       <button class="btn btn-outline-success" onclick="lastEvenNum()">
@@ -72,6 +77,7 @@
       </button>
       <p id="lastEvenNum"></p>
     </div>
+    <!-- Đổi chỗ 2 giá trị trong mảng -->
     <div class="container">
       <h3>6. Đổi chỗ 2 giá trị trong mảng</h3>
       <input
@@ -83,12 +89,17 @@
       <input
         class="rounded p-1"
         type="number"
-        id="SecondLocation"
+        id="secondLocation"
         placeholder="Nhập vị trí thứ hai"
       />
-      <button type="button" class="btn btn-outline-success rounded">
+      <button
+        type="button"
+        onclick="swapLocation()"
+        class="btn btn-outline-success rounded"
+      >
         Đổi chỗ
       </button>
+      <p id="swapLocation"></p>
     </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script

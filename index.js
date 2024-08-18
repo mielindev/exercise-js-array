@@ -72,3 +72,13 @@ function lastEvenNum() {
     "#lastEvenNum"
   ).innerHTML = `Số nhỏ nhất trong mảng: ${lastEvenNum}`;
 }
+function swapLocation() {
+  var firstLocation = document.querySelector("#firstLocation").value * 1;
+  var secondLocation = document.querySelector("#secondLocation").value * 1;
+  var tempValue = originArray[firstLocation - 1];
+  originArray[firstLocation - 1] = originArray[secondLocation - 1];
+  originArray[secondLocation - 1] = tempValue;
+  document.querySelector(
+    "#swapLocation"
+  ).innerHTML = `Mảng sau khi đổi vị trí: ${originArray}`;
+}
